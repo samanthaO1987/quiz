@@ -2,9 +2,13 @@
 
 ## Installation
 
-```ruby
-bundle
-rake db:create
-rake db:migrate
-rake db:seed
-```
+* bundle install
+
+* rake db:create
+
+* rake db:migrate
+
+* rake db:seed
+
+
+d
