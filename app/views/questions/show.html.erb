@@ -1,0 +1,15 @@
+<h1 class="bordered"><%= @user.name %></h1>
+
+<h3><%= @question.content %></h3>
+
+<%= form_tag questions_path do |f| %>
+    <% @question.answers.each do |answer| %>
+        <p>
+          <%= radio_button_tag :answer_id, answer.id, false, class: "answer" %>
+          <%= answer.content %>
+        </p>
+    <% end %>
+
+    <%= hidden_field_tag :id, @question.id %>
+    <%= submit_tag "Volgende", class: "next-btn" %>
+<% end %>
