@@ -1,6 +1,6 @@
-# Quiz
+= Quiz
 
-## Installation
+== Installation
 
 * bundle install
 
@@ -9,6 +9,3 @@
 * rake db:migrate
 
 * rake db:seed
-
-
-d
