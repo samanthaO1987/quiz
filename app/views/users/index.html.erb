@@ -1,0 +1,18 @@
+<%= form_for @user do |f| %>
+<p>
+  Wat is je naam?<br>
+  <%= f.text_field :name %>
+</p>
+<p><%= f.submit "Start Quiz" %></p>
+<% end %>
+
+<% if @users.present? %>
+<hr>
+
+<h1>Highscores</h1>
+<ul>
+  <% @users.each do |u| %>
+  <li><%= u.name %> <%= u.score %></li>
+      <% end %>
+</ul>
+<% end %>
